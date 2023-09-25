@@ -1,0 +1,25 @@
+.shadow-effect {
+  border: none;
+}
+input[type="text"],
+textarea {
+  height: 50px;
+  padding-left: 20px;
+  font-size: 12px;
+  width: 100%;
+}
+textarea {
+  height: 200px;
+  padding-left: 20px;
+  font-size: 12px;
+  width: 100%;
+}
+.btn-theme {
+  background-color: var(--primary-color);
+
+  height: 48px;
+  width: 20%;
+  border: none;
+  font-size: 13px;
+  // color: var(--secondary-color);
+}
