@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 :root {
-  --primary-color: #026427;
-  --secondary-color: #e5f5ea;
+  --primary-color: #004953;
+  --secondary-color: rgb(0, 73, 83, 0.1);
   --body-text-color: #596392;
   --navbar-footer-color: #f9f9f9;
 }
@@ -18,7 +18,9 @@ body {
   color: var(--primary-color);
   text-decoration: none;
 }
-
+.bg-theme {
+  background-color: var(--primary-color);
+}
 .nav-link {
   color: var(--primary-color);
 }
