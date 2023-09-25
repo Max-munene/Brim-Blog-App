@@ -1,16 +1,17 @@
 .card {
   background-color: var(--secondary-color);
   border: none;
+  // width: 1200px;
 }
-input[text],
-input[email] {
-  height: 60px;
+input[type="text"],
+input[type="email"] {
+  height: 50px;
   padding-left: 20px;
   font-size: 12px;
   width: 100%;
 }
 .btn-sub {
-  height: 36px;
+  height: 48px;
   width: 100%;
   border: none;
   font-size: 13px;
