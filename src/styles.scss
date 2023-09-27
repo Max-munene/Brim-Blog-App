@@ -18,7 +18,7 @@ body {
 .site-logo {
   padding: 5px 20px;
   border-radius: 20px;
-  background-color: $secondary-color;
+  background-color: var(--secondary-color);
   color: $primary-color;
   text-decoration: none;
 }
