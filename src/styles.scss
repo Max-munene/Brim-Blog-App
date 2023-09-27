@@ -6,6 +6,10 @@
   --body-text-color: #596392;
   --navbar-footer-color: #f9f9f9;
 }
+$primary-color: #004953;
+$secondary-color: #f9f9f9;
+$body-text-color: #596392;
+$navbar-footer-color: #f9f9f9;
 body {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
@@ -14,16 +18,29 @@ body {
 .site-logo {
   padding: 5px 20px;
   border-radius: 20px;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: $secondary-color;
+  color: $primary-color;
   text-decoration: none;
 }
 .bg-theme {
-  background-color: var(--primary-color);
+  background-color: $primary-color;
+}
+.bg-secondary-theme {
+  background-color: $secondary-color;
+  color: var(--primary-color);
 }
 .nav-link {
-  color: var(--primary-color);
+  color: $primary-color;
 }
 .shadow-effect {
   box-shadow: 0px 0px 33px -10px rgba(71, 114, 254, 0.3);
 }
+
+// .btn-sub {
+//   height: 48px;
+//   // width: 100%;
+//   border: none;
+//   font-size: 13px;
+//   // color: var(--secondary-color);
+//   background-color: $primary-color;
+// }
