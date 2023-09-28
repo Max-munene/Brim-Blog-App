@@ -28,6 +28,7 @@ body {
 .bg-secondary-theme {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+  border-radius: 10px;
 }
 .nav-link {
   color: var(--primary-color);
