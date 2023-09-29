@@ -4,16 +4,25 @@
       <h1 class="text-center text-theme-primary">New Category</h1>
       <p class="text-center mb-5">You can add new categories</p>
       <!-- input-group -->
-      <form class="input-group text-center">
+      <form
+        #categoryForm="ngForm"
+        class="input-group text-center"
+        (ngSubmit)="onSubmit(categoryForm)"
+      >
         <div class="form-group col-md-10">
           <input
+            name="category"
             type="text"
             class="form-control shadow-effect"
             placeholder="Add new Category"
+            ngModel
           />
         </div>
         <div class="col-md-2">
-          <button class="btn btn-block btn-info text-white mb-2 btn-sub">
+          <button
+            [disabled]="categoryForm.form.invalid"
+            class="btn btn-block btn-info text-white mb-2 btn-sub"
+          >
             Add Category
           </button>
         </div>
