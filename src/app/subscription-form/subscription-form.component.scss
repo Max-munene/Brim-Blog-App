@@ -3,6 +3,10 @@
   border: none;
   // width: 1200px;
 }
+.form-group {
+  display: flex;
+  justify-content: center;
+}
 input[type="text"],
 input[type="email"] {
   height: 50px;
