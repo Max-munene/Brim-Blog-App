@@ -1,18 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-// import { AngularFireModule } from '@angular/fire';
-
 import { environment } from 'src/environments/environment';
-// Firebase
-// import * as firebase from 'firebase';
-// import { AngularFireDatabaseModule } from 'angularfire2/database';
-// import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
-// import { getFirestore, provideFirestore } from '@angular/fire/firestore';
-import { Firestore } from '@angular/fire/firestore';
 
-// import { Firestore } from 'firebase/firestore';
-// import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 import { AngularFireModule } from '@angular/fire/compat';
 
@@ -33,7 +24,6 @@ import { CategoriesComponent } from './categories/categories.component';
     HeaderComponent,
     FooterComponent,
     DashboardComponent,
-    // CategoriesComponent,
     CategoriesComponent,
   ],
   imports: [
@@ -41,6 +31,7 @@ import { CategoriesComponent } from './categories/categories.component';
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
   ],
   providers: [
     // provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
