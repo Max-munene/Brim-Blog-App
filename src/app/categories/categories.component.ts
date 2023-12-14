@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FirebaseApp } from '@angular/fire/app';
-import { Firestore } from '@angular/fire/compat';
+import { AngularFirestore } from '@angular/fire/compat/firestore'; // Import AngularFirestore
 import { provideFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 @Component({
@@ -9,13 +9,13 @@ import { AngularFireModule } from '@angular/fire/compat';
   styleUrls: ['./categories.component.css'],
 })
 export class CategoriesComponent {
-  constructor(private afs: Firestore) {}
+  constructor(private fs: AngularFirestore) {}
 
   // formData: any;
   onSubmit(formData: any) {
     let categoryData = {
       category: formData.value.category,
     };
-    this.afs.collection('categories').add(categoryData);
+    this.fs.collection('categories').add(categoryData);
   }
 }

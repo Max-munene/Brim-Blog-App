@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "brim-blogs"
+  },
+  "targets": {
+    "brim-blogs": {
+      "hosting": {
+        "Brim-Blog-Dashboard": [
+          "brim-blogs"
+        ]
+      }
+    }
   }
 }
